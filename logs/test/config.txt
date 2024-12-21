@@ -1,0 +1,20 @@
+data:
+  batch_size: 64
+  data_dir: data/qm9
+  data_size: 50000
+  test_fraction: 0.1
+  train_fraction: 0.8
+  val_fraction: 0.1
+general:
+  plot: true
+  save: true
+  save_dir: logs/test
+model:
+  hidden_dim: 128
+  output_dim: 1
+target:
+  index: 2
+training:
+  learning_rate: 0.001
+  num_epochs: 100
+  weight_decay: 5e-4

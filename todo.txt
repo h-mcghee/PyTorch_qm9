@@ -1,0 +1,4 @@
+implement early stopping
+sort out readme.md
+function doc strings
+

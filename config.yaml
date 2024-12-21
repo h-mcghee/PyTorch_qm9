@@ -1,0 +1,27 @@
+data:
+  data_dir: "data/qm9"      # path to the QM9 dataset
+  data_size: 50000          # number of data points to use
+  train_fraction: 0.8           # fraction of data to use for training
+  val_fraction: 0.1             # fraction of data to use for validation
+  test_fraction: 0.1            # fraction of data to use for testing
+  batch_size: 64            # batch size for training
+
+target:
+  index: 2                  # HOMO orbital energy (eV) - check the QM9 dataset for target indices
+
+model:
+  hidden_dim: 128           # hidden dimension of the model
+  output_dim: 1             # output dimension of the model
+
+training:
+  num_epochs: 100          # number of epochs to train
+  learning_rate: 0.001      # learning rate for training
+  weight_decay: 5e-4        # weight decay for training
+
+general:
+  plot: true
+  save: true
+  save_dir: "logs/test"
+  mode: test #options train or test
+
+
